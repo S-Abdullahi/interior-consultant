@@ -70,6 +70,10 @@ p{
 section{
   margin-bottom: 70px;
 }
+
+ul{
+  font-family: 'Montserrat', sans-serif;
+}
 /* IMAGE STYLING */
 
 
@@ -152,17 +156,20 @@ header div+div{
   height: 100vh;
   line-height: 50px;
   margin-top: 50px;
-  background: green;
+  background:black;
   position: fixed;
   top: -50px;
-  z-index: 100;
+  z-index: 10;
+  left: -100%;
+  display: flex;
+  justify-content: center;
+  transition: all 1s ease-in-out;
 }
 
 header div+div ul{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: red; */
   justify-content: center;
 }
 
@@ -173,4 +180,22 @@ header li{
 header a{
   text-decoration: none;
   color: white;
+}
+
+/* hamburger icon styling */
+.sidebar{
+  background-color: black;
+  position: relative;
+  z-index: 40;
+}
+
+.clear{
+  opacity: 0;
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.menu{
+  opacity: 1;
+  transition: all 1s ease-in-out;
 }
