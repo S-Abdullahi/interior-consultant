@@ -1,0 +1,176 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  background-color: black;
+  color: white;
+}
+
+header{
+  margin-top: 10px;
+}
+.container{
+  padding: 0 10px;
+  margin:auto;
+  position:relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+main{
+  margin-bottom: 20px;
+}
+
+
+
+/* INTERIOR BUTTON STYLING */
+#container-btn{
+  width: 103px;
+  height: 31px;
+  border: solid white 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-btn a{
+  text-decoration: none;
+  font-family: 'Crimson Pro', serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: white;
+}
+
+/* TEXT STYLING */
+h1{
+  font-family: 'Lora', serif;
+  font-size: 36px;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 20px;
+}
+
+
+section{
+  margin-bottom: 70px;
+}
+/* IMAGE STYLING */
+
+
+#container-img > img{
+  max-width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+#container-card img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* READMORE STYLING */
+main > .container div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+section .container > div+div{
+  width: 260px;
+  height: 138px;
+  margin: auto;
+  background: black;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: -40px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 15px 1px rgba(18,17,17,0.67);
+}
+
+#container-card{
+  display: flex;
+  color: white;
+}
+
+#container-card > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+#container-card-name, #container-card-role{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#container-card-role{
+  font-size: 10px;
+}
+
+section p{
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: white;
+}
+
+
+footer p{
+  text-align: center;
+  font-size: 12px;
+}
+
+
+header div+div{
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  line-height: 50px;
+  margin-top: 50px;
+  background: green;
+  position: fixed;
+  top: -50px;
+  z-index: 100;
+}
+
+header div+div ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+  justify-content: center;
+}
+
+header li{
+  list-style: none;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+}
