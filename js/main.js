@@ -11,7 +11,7 @@ function menuBar(){
 }
 
 function clearBar(){
-    document.querySelector('.nav-menu').style.left = '-600px'
+    document.querySelector('.nav-menu').style.left = '-100%'
     document.querySelector('.clear').style.opacity = 0
     document.querySelector('.menu').style.opacity = 1
     document.querySelector('.clear').style.right = '-20px'
