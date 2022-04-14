@@ -150,22 +150,6 @@ footer p{
 }
 
 
-header div+div{
-  width: 100%;
-  margin: auto;
-  height: 100vh;
-  line-height: 50px;
-  margin-top: 50px;
-  background:black;
-  position: fixed;
-  top: -50px;
-  z-index: 10;
-  left: -100%;
-  display: flex;
-  justify-content: center;
-  transition: all 1s ease-in-out;
-}
-
 header div+div ul{
   display: flex;
   flex-direction: column;
@@ -198,4 +182,64 @@ header a{
 .menu{
   opacity: 1;
   transition: all 1s ease-in-out;
+}
+
+@media (max-width:767px){
+  header div+div{
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    line-height: 50px;
+    margin-top: 50px;
+    background:black;
+    position: fixed;
+    top: -50px;
+    z-index: 10;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+  }
+}
+
+@media(min-width:768px){
+  header{
+    display: flex;
+    align-items: center;
+  }
+
+  .main-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  main{
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  .nav-menu{
+    margin: auto;
+  }
+
+  .nav-menu ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-menu ul li{
+    margin: 30px;
+  }
+
+  li:hover{
+    transform: scale(1.1);
+    transition: all 0.1s ease-in;
+  }
+ 
 }
